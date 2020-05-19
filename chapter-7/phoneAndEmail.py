@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # phoneAndEmail.py - Finds phone numbers and email addresses on the clipboard.
-
 import pyperclip, re
+
 
 # Create phone regex.
 phoneRegex = re.compile(r'''(
@@ -12,6 +12,7 @@ phoneRegex = re.compile(r'''(
     (\d{4})                                 # last 4 digits
     (\s*(ext|x|ext.)\s*(\d{2,5}))?          # extension
 )''', re.VERBOSE)
+
 
 # Create email regex.
 emailRegex = re.compile(r'''(
